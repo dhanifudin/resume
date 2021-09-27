@@ -7,16 +7,28 @@
       <avatar />
       <div class="text-sm-center mb-4 mt-3">
         <h1>
-          Amirreza <span class="light-blue--text text--lighten-3">Nasiri</span>
+          Dian <span class="light-blue--text text--lighten-3">Hanifudin</span> Subhi
         </h1>
         <span>
-          A challenge-loving web developer
+          IT Lecturer and Tech Enthusiast
         </span>
       </div>
 
       <sidebar-section :options="sections.info" />
       <sidebar-section :options="sections.socials" />
       <sidebar-section :options="sections.hobbies">
+        <template v-slot:item="{item}">
+          <v-chip>
+            <v-avatar>
+              <v-icon>
+                {{ item.icon }}
+              </v-icon>
+            </v-avatar>
+            {{ item.text }}
+          </v-chip>
+        </template>
+      </sidebar-section>
+      <sidebar-section :options="sections.tools">
         <template v-slot:item="{item}">
           <v-chip>
             <v-avatar>
@@ -79,22 +91,17 @@ export default {
             {
               name: 'Email',
               icon: 'mdi-email',
-              text: 'hi@amirreza.in',
+              text: 'dhanifudin@polinema.ac.id',
             },
             {
               name: 'Website',
               icon: 'mdi-web',
-              text: 'amirreza.in',
-            },
-            {
-              name: 'Birth Date',
-              icon: 'mdi-cake-variant',
-              text: 'Dec 7, 1996',
+              text: 'dhanifudin.com',
             },
             {
               name: 'Habitation',
               icon: 'mdi-map-marker',
-              text: 'Tabriz, Iran',
+              text: 'Malang, Indonesia',
             },
           ],
         },
@@ -103,23 +110,23 @@ export default {
           items: [
             {
               icon: 'mdi-github-circle',
-              text: 'github.com/AmirrezaNasiri',
-              link: 'https://github.com/AmirrezaNasiri',
+              text: 'dhanifudin',
+              link: 'https://github.com/dhanifudin',
             },
             {
               icon: 'mdi-linkedin-box',
-              text: 'linkedin.com/in/amirreza-nasiri',
-              link: 'https://linkedin.com/in/amirreza-nasiri',
+              text: 'Dian Hanifudin Subhi',
+              link: 'https://linkedin.com/in/dhanifudin',
             },
             {
               icon: 'mdi-twitter',
-              text: 'twitter.com/Amirreza_Nasiri',
-              link: 'https://twitter.com/Amirreza_Nasiri',
+              text: '@dhanifudin',
+              link: 'https://twitter.com/dhanifudin',
             },
             {
               icon: 'mdi-instagram',
-              text: 'instagram.com/amirreza.n96',
-              link: 'https://instagram.com/amirreza.n96',
+              text: 'dhanifudin',
+              link: 'https://instagram.com/dhanifudin',
             },
           ],
         },
@@ -128,16 +135,16 @@ export default {
           items: [
 
             {
-              icon: 'mdi-bullseye',
-              text: 'Getting out of Safe Zone',
+              icon: 'mdi-keyboard',
+              text: 'Mechanical Keyboard',
             },
             {
               icon: 'mdi-biohazard',
               text: 'Challenges',
             },
             {
-              icon: 'mdi-bike',
-              text: 'Cycling',
+              icon: 'mdi-wallet-travel',
+              text: 'Travel',
             },
             {
               icon: 'mdi-image-filter-hdr',
@@ -152,24 +159,38 @@ export default {
               text: 'Teaching',
             },
             {
-              icon: 'mdi-karate',
+              icon: 'mdi-football',
               text: 'Sports',
-            },
-            {
-              icon: 'mdi-music',
-              text: 'Music',
-            },
-            {
-              icon: 'mdi-account-group',
-              text: 'Leadership',
-            },
-            {
-              icon: 'mdi-book-open-page-variant',
-              text: 'Books',
             },
             {
               icon: 'mdi-android-debug-bridge',
               text: 'Tickling Bugs!',
+            },
+          ],
+        },
+        tools: {
+          title: 'TOOLS',
+          items: [
+
+            {
+              icon: 'mdi-console',
+              text: 'CLI',
+            },
+            {
+              icon: 'mdi-code-tags',
+              text: 'Neovim',
+            },
+            {
+              icon: 'mdi-desktop-mac',
+              text: 'Mac Mini',
+            },
+            {
+              icon: 'mdi-linux',
+              text: 'VPS Linux',
+            },
+            {
+              icon: 'mdi-keyboard',
+              text: 'Vortex Core',
             },
           ],
         },
@@ -178,19 +199,15 @@ export default {
           items: [
             {
               text : 'English',
+              value: 60,
+            },
+            {
+              text : 'Indonesian',
               value: 70,
             },
             {
-              text : 'Turkish',
-              value: 45,
-            },
-            {
-              text : 'Azeri',
-              value: 100,
-            },
-            {
-              text : 'Persian',
-              value: 100,
+              text : 'Javanese',
+              value: 80,
             },
           ],
         },

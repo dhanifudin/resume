@@ -7,35 +7,9 @@
       <content-section
         title="Who am I?"
       >
-        I'm a developer born in Iran and founder of <a href="http://delix.ir/?utm_source=portiflo&utm_medium=link&utm_content=intro&utm_campaign=delix">Delix.ir</a>, <a href="https://bytegate.ir/?utm_source=portiflo&utm_medium=link&utm_content=intro&utm_campaign=bytegate">Bytegate.ir</a> and <a href="http://bobet.ir/?utm_source=portiflo&utm_medium=link&utm_content=intro&utm_campaign=bobet">Bobet.ir</a> and co-founder of <a href="https://smo.li/?utm_source=portiflo&utm_medium=link&utm_content=intro&utm_campaign=smoli">Smo.li</a>.<br>
-        I'm interested and skilled in different topics of Information Technology including programming, web development, and computer and network security.
-      </content-section>
-      <content-section
-        v-if="prouds"
-        title="What am I proud of?"
-      >
-        <v-layout
-          v-for="(proud, i) in prouds"
-          :key="i"
-        >
-          <v-flex
-            md1
-            xs3
-          >
-            <v-icon right>
-              {{ proud.icon }}
-            </v-icon>
-          </v-flex>
-          <v-flex
-            md11
-            xs9
-          >
-            <p>
-              <strong>{{ proud.text }}</strong><br>
-              <small>{{ proud.source }}</small>
-            </p>
-          </v-flex>
-        </v-layout>
+        I'm a developer born in Indonesia and IT Lecturer at State Polytechnic
+        of Malang. I'm interested and skilled in programming, web development
+        and also cloud infrastructure.
       </content-section>
       <content-section
         v-if="educations"
@@ -140,11 +114,18 @@ export default {
     ],
     educations: [
       {
-        from       : '2015',
-        to         : '2019 (not finished yet)',
-        title      : 'Bachelor\'s degree, Information Technology',
-        location   : 'Seraj University',
-        description: 'Became a member of University Academic Association of Computer Science',
+        from       : '2011',
+        to         : '2015',
+        title      : 'Master Degree, Informatics',
+        location   : 'Sepuluh Nopember Institute of Technology',
+        description: '',
+      },
+      {
+        from       : '2011',
+        to         : '2006',
+        title      : 'Bachelor Degree, Informatics',
+        location   : 'Sepuluh Nopember Institute of Technology',
+        description: '',
       },
     ],
     skills: [
