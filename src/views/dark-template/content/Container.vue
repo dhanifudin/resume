@@ -144,11 +144,6 @@ export default {
         icon : 'mdi-laravel',
         value: 90,
       },
-      {
-        title: 'Vue.js Framework',
-        icon : 'mdi-vuejs',
-        value: 90,
-      },
       { divider: true },
       {
         title: 'Ubuntu Server',
@@ -182,26 +177,11 @@ export default {
       },
       { divider: true },
       {
-        title: 'Hardware Development',
-        icon : 'mdi-chip',
-        value: 29,
-      },
-      {
         title: 'C/C++',
         icon : 'mdi-language-cpp',
         value: 38,
       },
       { divider: true },
-      {
-        title: 'Leadership',
-        icon : 'mdi-account-group',
-        value: 68,
-      },
-      {
-        title: 'Content Marketing (+340 articles)',
-        icon : 'mdi-text',
-        value: 96,
-      },
     ],
   }),
 }
