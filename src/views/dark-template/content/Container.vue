@@ -121,8 +121,8 @@ export default {
         description: '',
       },
       {
-        from       : '2011',
-        to         : '2006',
+        from       : '2006',
+        to         : '2011',
         title      : 'Bachelor Degree, Informatics',
         location   : 'Sepuluh Nopember Institute of Technology',
         description: '',
@@ -156,11 +156,6 @@ export default {
         value: 47,
       },
       {
-        title: 'Web Application Security',
-        icon : 'mdi-shield-lock',
-        value: 80,
-      },
-      {
         title: 'Test Driven Development',
         icon : 'mdi-test-tube',
         value: 26,
@@ -174,12 +169,6 @@ export default {
         title: 'Git',
         icon : 'mdi-git',
         value: 67,
-      },
-      { divider: true },
-      {
-        title: 'C/C++',
-        icon : 'mdi-language-cpp',
-        value: 38,
       },
       { divider: true },
     ],
